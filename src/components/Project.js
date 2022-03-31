@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import project from '../../studio/schemas/project';
+import project from '../studio/schemas/project';
 import sanityClient from "../client"
 
 const Project = () => {
@@ -34,7 +34,7 @@ const Project = () => {
             <div className='text-gray-500 text-xs space-x-4'>
               <span>
                 <strong className='font-bold'>Finished on</strong>:{" "}
-                {new Date(project.data).toLocaleDateString()}
+                {new Date(project.date).toLocaleDateString()}
               </span>
               <span>
                 <strong className='font-bold'>Company</strong>:{" "}
@@ -45,7 +45,7 @@ const Project = () => {
                 {project.projectType}
               </span>
               <p className='my-6 text-lg text-gray-700 leading-relaxed'>{project.description}</p>
-              <a href={project.link} target='_blank' rel='noreferrer' className='text-red-500 font-bold hover:text-red-400'>
+              <a href={project.link} target='_blank' rel='noreferrer' className='text-red-500 font-bold hover:underline hover:text-red-400 text-xl'>
                 View the project{" "}
               <span role="img" aria-label='right pointer'>👉</span>
               </a>
