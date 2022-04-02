@@ -26,10 +26,10 @@ const About = () => {
 
   return (
     <main className='relative'>
-      <img src={Aboutbg} alt="Las Vegas" className='absolute w-90 h-90 object-cover'/>
+      <img src={Aboutbg} alt="Las Vegas" className='absolute w-screen h-screen object-cover'/>
       <div className='p-10 lg:pt-48 container mx-auto relative'>
         <section className='bg-white-800 rounded-lg shadow-2xl lg:flex p-20'>
-          <img src={urlFor(author.authorImage).url()} alt={author.name} className='rounded w-32 h-32 lg:h-64 mr-8'/>
+          <img src={urlFor(author.authorImage).url()} alt={author.name} className='rounded w-45 h-45 lg:h-64 mr-8'/>
           <div className='text-lg flex flex-col justify-center'>
             <h1 className='cursive text-6xl text-green-300 mb-4'>
               Hey there. I'm{" "}
