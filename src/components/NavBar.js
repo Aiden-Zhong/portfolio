@@ -47,7 +47,7 @@ export const NavBar = () => {
                     </NavLink>
                 </nav>
                 <div className='inline-flex py-3 px-3 my-6'>
-                    <a href="https://youtube.com" target="_blank" rel="noreferrer">
+                    <a href="https://www.linkedin.com/in/yingjie-zhong-065984237/" target="_blank" rel="noreferrer">
                     <FaBeer/>
                     </a>
                     <SocialIcon url= "https://twitter.com/" className="mr-4" target="_blank" fgColor="blue" style={{ height: 35, width: 35 }} />
